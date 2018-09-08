@@ -1,3 +1,4 @@
+
 # What is JavaScript
 - JavaScript is a lightweight, cross-platform, object-oriented computer programming language 😅
 	- *“Lightweight”* just means that the language doesn’t eat up much memory of the computer, and that it has a relatively simple syntax and features. 
@@ -6,10 +7,8 @@
 - JavaScript is one of the three core technologies of web development. (HTML, CSS, JavaScript).
 - Today, JavaScript can be used in differrent places:
 	- **Client-side: JavaScript was traditionally only used in the browser**
-	- Server-side: Thanks to ~node.js~, we can use JavaSript on the server as well
-- Javascript is what made mordern web development possible:
-	- Dynamic effects and interactivity
-	- Modern web applications that we can interact with
+
 - **Frameworks/libraries like React and Angular are 100% based on JavaScript: you need to master JavaScript in order to use them!!!**
 
 ![](What%20is%20JavaScript/Screen%20Shot%202018-09-08%20at%2013.22.57.png)
+
