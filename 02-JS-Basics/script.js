@@ -52,7 +52,7 @@ alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + is
 /******************
  * Basic operators
 *******************/
-
+/*
 var now, yearBuu, yearJohn;
 now = 2018;
 ageBuu = 24;
@@ -80,3 +80,36 @@ console.log(typeof 'John is older than Buu'); // --> string
 
 var x;
 console.log(typeof x); // --> undefined
+*/
+
+/******************
+ * Operator precedence
+*******************/
+
+
+var now = 2018;
+var yearBuu = 1989;
+var fullAge = 24;
+
+// Multiple operators
+var isFullAge = now - yearBuu >= fullAge;
+console.log(isFullAge); // --> true
+
+// Grouping
+var ageBuu = now - yearBuu;
+var ageMark = 35;
+var average = (ageBuu + ageMark) / 2;
+console.log(average); // --> 32
+
+// Multiple assignments
+var x , y;
+x = y = (3 + 5) * 4 - 6; // --> 8 * 4 - 6 = 32 - 6 = 26
+console.log(x, y); // --> 26 26
+
+// More operators
+x *= 2; // --> x = x * 2
+console.log(x); // --> 52
+x += 10; // --> x = x + 10
+console.log(x); // --> 62
+x++; // --> x = x + 1 --> x += 1
+console.log(x); // --> 63
