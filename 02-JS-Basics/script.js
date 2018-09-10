@@ -126,7 +126,7 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). 
 GOOD LUCK 😀
 */
-
+/*
 var massMark, massJohn, heightMark, heightJohn, BMIMark, BMIJohn;
 massMark = 57; //kg;
 heightMark = 1.61; //meters
@@ -140,3 +140,37 @@ console.log('Mark\'s BMI: ' + BMIMark + '\n' + 'John\'s BMI: ' + BMIJohn);
 
 var markHigherBMI = BMIMark > BMIJohn;
 console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
+*/
+
+
+/**********************
+ * IF/ELSE statements
+***********************/
+
+
+var firstName = 'Buu';
+var civilStatus = 'single';
+
+var isMarried = true;
+if (isMarried) {
+    console.log(firstName + ' is married');
+} else {
+    console.log(firstName + ' will hopefully marry soon :)');
+}
+
+var massMark, massJohn, heightMark, heightJohn, BMIMark, BMIJohn;
+massMark = 57; //kg;
+heightMark = 1.61; //meters
+
+massJohn = 72;
+heightJohn = 1.68;
+
+BMIMark = massMark / (heightMark * heightMark);
+BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log('Mark\'s BMI: ' + BMIMark + '\n' + 'John\'s BMI: ' + BMIJohn);
+
+if (BMIMark > BMIJohn) {
+    console.log('Mark\'s BMI higher than John\'s');
+} else {
+    console.log('John\'s BMI higher than Mark\'s');
+}
