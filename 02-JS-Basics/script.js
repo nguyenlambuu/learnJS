@@ -373,3 +373,40 @@ if(scoreJohn > scoreMike && scoreJohn > scoreMarry){
  console.log(whatDoYouDo('designer', 'Jane'));
  console.log(whatDoYouDo('others', 'Doe'));
  */
+
+  /**********************
+ * Arrays
+ ***********************/
+/*
+ // Initialize new array
+ var names = [ 'Buu', 'Mike', 'Jane' ];
+ var years = new Array(1994, 1948, 1969);
+
+ console.log(names);
+ console.log(names[0]);
+ console.log(names.length);
+
+ // Mutate array data
+ names[1] = 'Ben';
+ names[5] = 'Marry'
+ console.log(names);
+ names[names.length] = 'Smith';
+ console.log(names);
+
+ // Different data types
+var buu = [ 'Buu', 'Nguyen', 1994, 'teacher', false ];
+
+buu.push('blue'); // Add element to the last of array
+console.log(buu);
+buu.unshift('Mr. '); // Add element to the first of array
+console.log(buu);
+buu.pop(); // Remove last element in array
+console.log(buu);
+buu.shift(); // Remove first element in array
+console.log(buu);
+console.log(buu.indexOf(1994)); // return index of element
+console.log(buu.indexOf('designer')); // return -1 because it's not existed
+
+buu.indexOf('designer') === -1 ? console.log('Buu is NOT a designer')
+: console.log('Buu IS a designer');
+*/
