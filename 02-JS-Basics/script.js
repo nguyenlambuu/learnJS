@@ -198,53 +198,87 @@ if (age < 13){
  * The ternary operator and switch statements
  ***********************/
 
-var firstName = 'Buu';
-var age = 16;
+// var firstName = 'Buu';
+// var age = 16;
 
-// Ternary operator
-age >= 18
-	? console.log(firstName + ' drinks beer.')
-	: console.log(firstName + ' drinks juice.');
+// // Ternary operator
+// age >= 18
+// 	? console.log(firstName + ' drinks beer.')
+// 	: console.log(firstName + ' drinks juice.');
 
-var drink = age >= 18 ? 'beer' : 'juice'; // Return beer or juice
-console.log(drink);
+// var drink = age >= 18 ? 'beer' : 'juice'; // Return beer or juice
+// console.log(drink);
 
-/*
-    if(age >=18){
-        var drink = 'beer';
-    } else {
-        var drink = 'juice';
-    }
-*/
+// /*
+//     if(age >=18){
+//         var drink = 'beer';
+//     } else {
+//         var drink = 'juice';
+//     }
+// */
 
-// Switch statement
-var job = 'designer';
+// // Switch statement
+// var job = 'designer';
 
-switch (job) {
-	case 'teacher':
-	case 'instructor':
-	case 'lecturer':
-		console.log(firstName + ' teaches kids how to code');
-		break;
-	case 'driver':
-		console.log(firstName + ' drives an Uber in SG');
-		break;
-	case 'designer':
-		console.log(firstName + ' designs beautiful websites');
-		break;
-	default:
-		console.log(firstName + ' does something else.');
-}
+// switch (job) {
+// 	case 'teacher':
+// 	case 'instructor':
+// 	case 'lecturer':
+// 		console.log(firstName + ' teaches kids how to code');
+// 		break;
+// 	case 'driver':
+// 		console.log(firstName + ' drives an Uber in SG');
+// 		break;
+// 	case 'designer':
+// 		console.log(firstName + ' designs beautiful websites');
+// 		break;
+// 	default:
+// 		console.log(firstName + ' does something else.');
+// }
 
-switch (true) {
-	case age < 13:
-		console.log(firstName + ' is a boy.');
-		break;
-	case age >= 13 && age < 20:
-		console.log(firstName + ' is a teenager');
-		break;
-	case age >= 20 && age < 30:
-		console.log(firstName + ' is a young man');
-        break;
-    default: console.log(firstName + ' is a man.');
-}
+// switch (true) {
+// 	case age < 13:
+// 		console.log(firstName + ' is a boy.');
+// 		break;
+// 	case age >= 13 && age < 20:
+// 		console.log(firstName + ' is a teenager');
+// 		break;
+// 	case age >= 20 && age < 30:
+// 		console.log(firstName + ' is a young man');
+//         break;
+//     default: console.log(firstName + ' is a man.');
+// }
+
+
+/**********************
+ * Truthy and Falsy values and equality operators
+ ***********************/
+
+ // Falsy values: undefined, null, 0, '', NaN
+ // Truthy values: NOT FALSY VALUES
+
+ var height;
+ console.log(typeof height); // --> undefined
+height = '';
+ if(height){ // --> false;
+     console.log('Variable is defined');
+ } else {
+    console.log('Variable has NOT been defined'); // --> run
+ }
+
+ height = 0; // --> falsy value
+ if (height || height === 0) {
+    console.log('Variable is defined'); // --> run, because height === 0 is true
+} else {
+   console.log('Variable has NOT been defined'); 
+ }
+
+
+ // Equality operators
+
+ height = 23; 
+ // '23' == 23 --> true
+ // But '23' === 23 --> false
+ if (height == '23') {
+    console.log('The == operator does type coercion!');
+ }
