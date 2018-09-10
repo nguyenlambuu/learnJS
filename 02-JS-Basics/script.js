@@ -454,3 +454,36 @@ var finalValues = [
 
 console.log(finalValues);
 */
+
+/**********************
+ * Objects and properties
+ ***********************/
+/*
+ // Object literal
+var buu = {
+	firstName: 'Buu',
+	lastName: 'Nguyen',
+    birthYear: 1994,
+    family: [ 'Jane', 'Smith', 'Bob', 'Mike' ],
+    job: 'teacher',
+    isMarried: false
+};
+
+// Get object data
+console.log(buu.firstName); // --> Buu
+console.log(buu['lastName']); // --> Nguyen
+var x = 'birthYear';
+console.log(buu[x]);
+
+// Mutate object data
+buu.job = 'designer';
+buu['isMarried'] = true;
+console.log(buu);
+
+// new Object syntax
+var jane = new Object();
+jane.firstName = 'Jane';
+jane.birthYear = 1969;
+jane['lastname'] = 'Smith';
+console.log(jane);
+*/
