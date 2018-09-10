@@ -487,3 +487,25 @@ jane.birthYear = 1969;
 jane['lastname'] = 'Smith';
 console.log(jane);
 */
+
+/**********************
+ * Objects and methods
+ ***********************/
+/*
+var buu = {
+	firstName: 'Buu',
+	lastName: 'Nguyen',
+    birthYear: 1994,
+    family: [ 'Jane', 'Smith', 'Bob', 'Mike' ],
+    job: 'teacher',
+    isMarried: false,
+    calculateAge: function(){
+        this.age = 2018 - this.birthYear; // --> "this", what is means here in this context is buu. "This" means this object, the present, the current object. So, when we call this method here: this.birthYear will mean buu.birthYear
+    }
+};
+
+// console.log(buu.calculateAge());
+// buu.age = buu.calculateAge();
+buu.calculateAge();
+console.log(buu);
+*/
