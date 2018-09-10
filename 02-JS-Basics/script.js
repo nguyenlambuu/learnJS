@@ -547,3 +547,45 @@ if (john.caclBMI() > mark.caclBMI()){
     console.log('They have the same BMI');
 }
 */
+
+/**********************
+ * Loops and iteration
+ ***********************/
+/*
+// For loop
+for (var i = 0; i < 10; i++) {
+	console.log(i);
+}
+
+// i = 0, 0 < 10 TRUE, log i to console, i++
+// i = 1, 1 < 10 TRUE, log i to the console, i++
+//...
+// i = 9, 9 < 10 TRUE, log i to the console, i++
+// i = 10, 10 < 10 FALSE, exit the loop!
+
+var buu = ['Buu', 'Nguyen', 1994, 'designer', false, 'blue'];
+for (var i = 0; i < buu.length; i++) {
+	console.log(buu[i]);
+}
+
+
+// While loop
+var i = 0;
+while (i < buu.length) {
+	console.log(buu[i]);
+	i++;
+}
+
+
+// continue and break statements
+var buu = ['Buu', 'Nguyen', 1994, 'designer', false, 'blue'];
+for (var i = 0; i < buu.length; i++) {
+    if(typeof buu[i] !== 'string') continue; // --> log value which a string.
+    console.log(buu[i]); // --> Buu, Nguyen, designer, blue
+}
+
+// Looping backwards
+for (var i = buu.length - 1; i >= 0; i--) {
+    console.log(buu[i]);
+}
+*/
