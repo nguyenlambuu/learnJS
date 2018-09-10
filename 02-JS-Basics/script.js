@@ -322,3 +322,28 @@ if(scoreJohn > scoreMike && scoreJohn > scoreMarry){
 //     console.log('There is a draw');
 // }
 */
+
+/**********************
+ * FUNCTIONS
+ ***********************/
+/*
+ function calculateAge(birthYear) {
+    return 2018 - birthYear;    
+ }
+
+ var ageBuu = calculateAge(1994);
+ var ageMike = calculateAge(1948);
+ var ageJane = calculateAge(1969);
+ console.log(ageBuu, ageMike, ageJane);
+
+ function yearUntilRetirement(birthYear, firstName) {
+     var age = calculateAge(birthYear); // function calls other function
+     var retirement = 60 - age;
+     (retirement > 0) ? console.log(firstName + ' retires in ' + retirement + ' years.') : console.log(firstName + ' is already retired!');
+     
+ }
+
+ yearUntilRetirement(1994, 'Buu');
+ yearUntilRetirement(1948, 'Mike');
+ yearUntilRetirement(1969, 'Jane');
+ */
