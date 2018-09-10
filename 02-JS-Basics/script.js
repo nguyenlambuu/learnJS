@@ -1,11 +1,11 @@
 /**************************
  * Hello World!!!
-***************************/
+ ***************************/
 // console.log('Hello World');
 
 /**************************
  * Variables and data types
-***************************/
+ ***************************/
 /*
 // String
 var firstName = 'Buu';
@@ -28,7 +28,7 @@ var years = 2018;
 
 /**************************************
  * Variable mutation and type coercion
-***************************************/
+ ***************************************/
 /*
 var firstName = 'Buu';
 var age = 24;
@@ -51,7 +51,7 @@ alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + is
 
 /******************
  * Basic operators
-*******************/
+ *******************/
 /*
 var now, yearBuu, yearJohn;
 now = 2018;
@@ -84,7 +84,7 @@ console.log(typeof x); // --> undefined
 
 /**********************
  * Operator precedence
-***********************/
+ ***********************/
 
 /*
 var now = 2018;
@@ -117,7 +117,7 @@ console.log(x); // --> 63
 
 /**********************
  * CODING CHALLENGE
-***********************/
+ ***********************/
 /*
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
 1. Store Mark's and John's mass and height in variables
@@ -142,10 +142,9 @@ var markHigherBMI = BMIMark > BMIJohn;
 console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
 */
 
-
 /**********************
  * IF/ELSE statements
-***********************/
+ ***********************/
 
 /*
 var firstName = 'Buu';
@@ -178,8 +177,9 @@ if (BMIMark > BMIJohn) {
 
 /**********************
  * Boolean logic
-***********************/
+ ***********************/
 
+/*
 var firstName = 'Buu';
 var age = 24;
 
@@ -191,4 +191,60 @@ if (age < 13){
     console.log(firstName + ' is a young man');
 } else {
     console.log(firstName + ' is a man.');
+}
+*/
+
+/**********************
+ * The ternary operator and switch statements
+ ***********************/
+
+var firstName = 'Buu';
+var age = 16;
+
+// Ternary operator
+age >= 18
+	? console.log(firstName + ' drinks beer.')
+	: console.log(firstName + ' drinks juice.');
+
+var drink = age >= 18 ? 'beer' : 'juice'; // Return beer or juice
+console.log(drink);
+
+/*
+    if(age >=18){
+        var drink = 'beer';
+    } else {
+        var drink = 'juice';
+    }
+*/
+
+// Switch statement
+var job = 'designer';
+
+switch (job) {
+	case 'teacher':
+	case 'instructor':
+	case 'lecturer':
+		console.log(firstName + ' teaches kids how to code');
+		break;
+	case 'driver':
+		console.log(firstName + ' drives an Uber in SG');
+		break;
+	case 'designer':
+		console.log(firstName + ' designs beautiful websites');
+		break;
+	default:
+		console.log(firstName + ' does something else.');
+}
+
+switch (true) {
+	case age < 13:
+		console.log(firstName + ' is a boy.');
+		break;
+	case age >= 13 && age < 20:
+		console.log(firstName + ' is a teenager');
+		break;
+	case age >= 20 && age < 30:
+		console.log(firstName + ' is a young man');
+        break;
+    default: console.log(firstName + ' is a man.');
 }
