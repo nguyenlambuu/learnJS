@@ -29,3 +29,43 @@ function foo() {
 foo(); // --> 65
 console.log(age); // --> 23 --> global execution context object
 */
+
+/**********************
+ * Scoping 
+ ***********************/
+/*
+ // First scoping example
+
+ var a = 'Halo!';
+ first();
+ function first() {
+     var b = 'Hi!';
+     second();
+
+     function second() {
+         var c = 'Hey!';
+         console.log(a + ' ' + b + ' ' + c);
+         
+     }
+ }
+
+ // Example to show the differece between excution stack and scope chain
+ 
+ var a = 'Halo!';
+ first();
+ function first() {
+     var b = 'Hi!';
+     second();
+
+     function second() {
+         var c = 'Hey!';
+         third();
+     }
+ }
+
+ function third() {
+     var d = 'John';
+    //  console.log(c); // --> undefined;
+    console.log(a + ' ' + d); 
+ }
+ */
