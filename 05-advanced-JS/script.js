@@ -33,3 +33,25 @@ console.log(mike.lastName);
 console.log(jane.lastName);
 console.log(bob.lastName);
 */
+
+/**********************
+ * Object.create
+ ***********************/
+/*
+var personProto = {
+	calculateAge: function() {
+		console.log(2018 - this.yearOfBirth);
+	}
+};
+
+var john = Object.create(personProto); // --> Empty object with calculateAge prototype
+john.firstName = 'John';
+john.yearOfBirth = 1994;
+john.job = 'teacher';
+
+var jane = Object.create(personProto, {
+    firstName: { value: 'Jane' },
+    yearOfBirth: { value: 1949 },
+    job: { value: 'designer' }
+});
+*/
