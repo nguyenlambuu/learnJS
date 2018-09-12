@@ -93,3 +93,40 @@ change(age, obj);
 console.log(age); // --> 24, because age is a primitive
 console.log(obj.city); // --> New York
 */
+
+/**********************
+ * Passing functions as arguments
+ ***********************/
+
+var years = [1990, 1965, 1937, 2005, 1998];
+
+function arrayCalc(arr, fn) {
+	var arrResult = [];
+	for (var i = 0; i < arr.length; i++) {
+		arrResult.push(fn(arr[i]));
+	}
+	return arrResult;
+}
+
+function calculateAge(element) {
+	return 2018 - element;
+}
+
+function isFullAge(element) {
+	return element >= 18;
+}
+
+function maxHeartRate(element) {
+	if (element > 18 && element <= 81) {
+		return Math.round(206.9 - 0.67 * element);
+	} else {
+		return -1;
+	}
+}
+
+var ages = arrayCalc(years, calculateAge);
+var fullAges = arrayCalc(ages, isFullAge);
+var heartRates = arrayCalc(ages, maxHeartRate);
+console.log(ages); // --> [28, 53, 81, 13, 20]
+console.log(fullAges); // --> [true, true, true, false, true]
+console.log(heartRates); // --> [188, 171, 153, -1, 194]
