@@ -69,3 +69,41 @@ console.log(age); // --> 23 --> global execution context object
     console.log(a + ' ' + d); 
  }
  */
+
+ /**********************
+ * The "this" keyword 
+ ***********************/
+/*
+
+ console.log(this); // --> Window Object
+
+ calculateAge(1994);
+ function calculateAge(year) {
+     console.log(2018 - year);
+     console.log(this); // --> Window Object
+ }
+
+ var john = {
+     name: 'John',
+     yob: '1994',
+     calculateAge: function(){
+         console.log(this); // --> john object, because calculateAge is a method of john object.
+         console.log(2018 - this.yob);
+         
+         function innerFunction (){
+             console.log(this); // --> Window object (default), because innnerFunction is not a method
+         }
+         innerFunction();
+     }
+ }
+
+ john.calculateAge();
+
+ var mike = {
+     name: 'Mike',
+     yob: 1969
+ };
+
+ mike.calculateAge = john.calculateAge; // --> METHOD BORROWING
+ mike.calculateAge();
+ */
