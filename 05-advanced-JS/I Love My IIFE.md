@@ -4,6 +4,7 @@ An IIFE, or  [Immediately Invoked Function Expression](http://benalman.com/news/
 In the words of  [James Padolsey](http://james.padolsey.com/javascript/iife-argument-madness/) :
 > *An IIFE protects a module’s scope from the environment in which it is placed.*  
 
+
 There are more benefits to using IIFE’s than just local scoping, but before we talk about some of the other benefits, let’s take a look at some code to see how to create a basic IIFE:
 ``` javascript
 (function(){
@@ -25,6 +26,7 @@ A function, without a name, is created and then called (invoked) immediately via
 You might be wondering why we need to wrap the immediately invoked anonymous function inside of parentheses. Before I explain why, try the above code inside of a console window. Get a syntax error?
 By wrapping the anonymous function inside of parentheses, the JavaScript parser knows to treat the anonymous function as a function expression instead of a function declaration. A function expression can be called (invoked) immediately by using a set of parentheses, but a function declaration cannot be.
 **Note**: In case you forget the difference between JavaScript function expressions and function declarations:
+
 
   *Function Expression* - `var test = function() {};`
   *Function Declaration* - `function test() {};`
