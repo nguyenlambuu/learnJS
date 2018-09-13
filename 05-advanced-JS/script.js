@@ -135,7 +135,7 @@ console.log(heartRates); // --> [188, 171, 153, -1, 194]
 /**********************
  * Functions returning functions
  ***********************/
-
+/*
 function interviewQuestion(job) {
 	if (job === 'designer') {
 		return function(name) {
@@ -163,3 +163,27 @@ designerQuestion('Mike');
 interviewQuestion('teacher')('Steve');
 interviewQuestion('designer')('Bill');
 interviewQuestion('driver')('Marry');
+*/
+
+/**********************
+ * IIFE
+ ***********************/
+/*
+// function game() {
+// 	var score = Math.random() * 10;
+// 	console.log(score >= 5);
+// }
+// game();
+
+(function() {
+	var score = Math.random() * 10;
+	console.log(score >= 5);
+})();
+
+// console.log(score); // --> Error, score is not defined
+
+(function (goodLuck){
+	var score = Math.random() * 10;
+	console.log(score >= 5 - goodLuck);
+})(5);
+*/
