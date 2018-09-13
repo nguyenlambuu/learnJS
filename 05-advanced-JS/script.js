@@ -131,3 +131,35 @@ console.log(ages); // --> [28, 53, 81, 13, 20]
 console.log(fullAges); // --> [true, true, true, false, true]
 console.log(heartRates); // --> [188, 171, 153, -1, 194]
 */
+
+/**********************
+ * Functions returning functions
+ ***********************/
+
+function interviewQuestion(job) {
+	if (job === 'designer') {
+		return function(name) {
+			console.log(name + ', can you please explain what UX design is?');
+		};
+	} else if (job === 'teacher') {
+		return function(name) {
+			console.log('What subject do you teach, ' + name + '?');
+		};
+	} else {
+        return function(name) {
+            console.log('Hello ' + name + ', what do you do?');
+        }
+    }
+}
+
+var teacherQuestion = interviewQuestion('teacher');
+var designerQuestion = interviewQuestion('designer');
+
+teacherQuestion('John');
+teacherQuestion('Mark');
+designerQuestion('Jane');
+designerQuestion('Mike');
+
+interviewQuestion('teacher')('Steve');
+interviewQuestion('designer')('Bill');
+interviewQuestion('driver')('Marry');
