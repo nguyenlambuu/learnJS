@@ -187,3 +187,62 @@ interviewQuestion('driver')('Marry');
 	console.log(score >= 5 - goodLuck);
 })(5);
 */
+
+/**********************
+ * Closures
+ ***********************/
+/*
+function retirement(retirementAge) {
+	var message = ' years left until retirement.';
+
+	return function(yearOfBirth){
+		var age = 2018 - yearOfBirth;
+		console.log((retirementAge - age) + message);
+	}
+}
+
+var retirementUS = retirement(66);
+var retirementGermany = retirement(65);
+var retirementIceland = retirement(67);
+
+retirementUS(1994);
+retirementGermany(1994);
+retirementIceland(1994);
+
+// Functions returning functions --> Return the same function with 3 times
+// ------------------------------------------
+function interviewQuestionFunctionReturn(job) {
+	switch(true){
+		case job === 'teacher': return function(name){
+			console.log('What subject do you teach, ' + name);
+		};
+		case job === 'designer': return function(name){
+			console.log(name + ', can you please explain what UX design is?');
+		};
+		default: return function(name){
+			console.log('Hello ' + name + ', what do you do?');
+		};
+	}
+}
+// interviewQuestionFunctionReturn('teacher')('John');
+// interviewQuestionFunctionReturn('designer')('Jane');
+// interviewQuestionFunctionReturn('designer')('Mike');
+// interviewQuestionFunctionReturn('other')('Bob');
+
+// Closures
+// ------------------------------------------
+function interviewQuestionClosures(job) {
+	
+	return function(name){
+		switch(true){
+			case job === 'teacher': console.log('What subject do you teach, ' + name); break;
+			case job === 'designer': console.log(name + ', can you please explain what UX design is?'); break;
+			default: console.log('Hello ' + name + ', what do you do?'); break;
+		}
+	}
+}
+
+interviewQuestionClosures('teacher')('John');
+interviewQuestionClosures('designer')('Jane');
+interviewQuestionClosures('other')('Bob');
+*/
